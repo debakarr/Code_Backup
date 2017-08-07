@@ -1,0 +1,90 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : HALF_ADDER_S.ant
+// /___/   /\     Timestamp : Sat Feb 18 09:40:35 2017
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: HALF_ADDER_S
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module HALF_ADDER_S;
+    reg A = 1'b0;
+    reg B = 1'b0;
+    wire S;
+    wire Cout;
+
+
+    HALF_ADDER_DE UUT (
+        .A(A),
+        .B(B),
+        .S(S),
+        .Cout(Cout));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process
+        #0;
+        ANNOTATE_S;
+        ANNOTATE_Cout;
+        forever begin
+            #50;
+            ANNOTATE_S;
+            ANNOTATE_Cout;
+            #50;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("C:\\Users\\BAKA\\Documents\\Xilinx Baka\\HALF_ADDER_DFM\\HALF_ADDER_S.ano");
+        #1000 // Final time:  1000 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  200ns
+        #200;
+        B = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  300ns
+        #100;
+        A = 1'b1;
+        B = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  400ns
+        #100;
+        B = 1'b1;
+    end
+
+    task ANNOTATE_S;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,S,%b]", $time, S);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_Cout;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,Cout,%b]", $time, Cout);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

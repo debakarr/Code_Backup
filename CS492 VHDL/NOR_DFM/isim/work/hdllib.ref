@@ -1,0 +1,4 @@
+MO NOR_S NULL C:/Xilinx92i/NOR_DFM/NOR_S.tfw vlg31/_n_o_r___s.bin 1487388674
+EN nor_de NULL C:/Xilinx92i/NOR_DFM/NOR_DE.vhd sub00/vhpl00 1487388674
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1487388674
+AR nor_de behavioral C:/Xilinx92i/NOR_DFM/NOR_DE.vhd sub00/vhpl01 1487388675

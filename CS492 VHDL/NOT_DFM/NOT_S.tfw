@@ -1,0 +1,37 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : NOT_S.tfw
+// /___/   /\     Timestamp : Sat Feb 18 08:48:41 2017
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: NOT_S
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module NOT_S;
+    reg A = 1'b0;
+    wire B;
+
+
+    NOT_DE UUT (
+        .A(A),
+        .B(B));
+
+    initial begin
+        // -------------  Current Time:  200ns
+        #200;
+        A = 1'b1;
+    end
+
+endmodule
+

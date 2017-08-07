@@ -1,0 +1,4 @@
+MO OR_S NULL C:/Xilinx92i/OR_DFM/OR_S.tfw vlg43/_o_r___s.bin 1487388361
+EN or_de NULL C:/Xilinx92i/OR_DFM/OR_DE.vhd sub00/vhpl00 1487388361
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1487388361
+AR or_de behavioral C:/Xilinx92i/OR_DFM/OR_DE.vhd sub00/vhpl01 1487388362

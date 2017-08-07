@@ -1,0 +1,31 @@
+V3 16
+FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/../AND_DFM/AND_DE.vhd" 2017/02/25.19:59:27 J.36
+EN work/AND_DE 1488033056 \
+      FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/../AND_DFM/AND_DE.vhd" \
+      PB ieee/std_logic_1164 1179176983 PB ieee/std_logic_arith 1179176985 \
+      PB ieee/STD_LOGIC_UNSIGNED 1179176991
+AR work/AND_DE/Behavioral 1488033057 \
+      FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/../AND_DFM/AND_DE.vhd" \
+      EN work/AND_DE 1488033056
+FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/../XOR_DFM/XOR_DE.vhd" 2017/02/25.19:59:23 J.36
+EN work/XOR_DE 1488033054 \
+      FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/../XOR_DFM/XOR_DE.vhd" \
+      PB ieee/std_logic_1164 1179176983 PB ieee/std_logic_arith 1179176985 \
+      PB ieee/STD_LOGIC_UNSIGNED 1179176991
+AR work/XOR_DE/Behavioral 1488033055 \
+      FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/../XOR_DFM/XOR_DE.vhd" \
+      EN work/XOR_DE 1488033054
+FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/HALF_ADDER_DE.vhd" 2017/02/25.19:55:38 J.36
+EN work/HALF_ADDER_DE 1488033058 \
+      FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/HALF_ADDER_DE.vhd" \
+      PB ieee/std_logic_1164 1179176983 PB ieee/std_logic_arith 1179176985 \
+      PB ieee/STD_LOGIC_UNSIGNED 1179176991
+AR work/HALF_ADDER_DE/Behavioral 1488033059 \
+      FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/HALF_ADDER_DE.vhd" \
+      EN work/HALF_ADDER_DE 1488033058 CP XOR_DE CP AND_DE
+FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/HALF_ADDER_S.tfw" 2017/02/25.20:00:54 J.36
+MO work/HALF_ADDER_S \
+      FL "C:/Users/BAKA/Documents/Xilinx Baka/HALF_ADDER_SM/HALF_ADDER_S.tfw" \
+      MI HALF_ADDER_DE
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

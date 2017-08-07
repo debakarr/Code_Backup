@@ -1,0 +1,4 @@
+AR xor_de behavioral C:/Xilinx92i/XOR_DFM/XOR_DE.vhd sub00/vhpl01 1487388816
+MO XOR_S NULL C:/Xilinx92i/XOR_DFM/XOR_S.tfw vlg1B/_x_o_r___s.bin 1487388814
+EN xor_de NULL C:/Xilinx92i/XOR_DFM/XOR_DE.vhd sub00/vhpl00 1487388815
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1487388815

@@ -1,0 +1,8 @@
+AR full_adder_de behavioral "C:/Users/BAKA/Documents/Xilinx Baka/FULL_ADDER_SM/FULL_ADDER_DE.vhd" sub00/vhpl05 1488032103
+EN half_adder_de NULL "C:/Users/BAKA/Documents/Xilinx Baka/FULL_ADDER_SM/../HALF_ADDER_DFM/HALF_ADDER_DE.vhd" sub00/vhpl00 1488032098
+MO FULL_ADDER_S NULL "C:/Users/BAKA/Documents/Xilinx Baka/FULL_ADDER_SM/FULL_ADDER_S.tfw" vlg58/_f_u_l_l___a_d_d_e_r___s.bin 1488032097
+AR half_adder_de behavioral "C:/Users/BAKA/Documents/Xilinx Baka/FULL_ADDER_SM/../HALF_ADDER_DFM/HALF_ADDER_DE.vhd" sub00/vhpl01 1488032099
+EN or_de NULL "C:/Users/BAKA/Documents/Xilinx Baka/FULL_ADDER_SM/../OR_DFM/OR_DE.vhd" sub00/vhpl02 1488032100
+EN full_adder_de NULL "C:/Users/BAKA/Documents/Xilinx Baka/FULL_ADDER_SM/FULL_ADDER_DE.vhd" sub00/vhpl04 1488032102
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1488032098
+AR or_de behavioral "C:/Users/BAKA/Documents/Xilinx Baka/FULL_ADDER_SM/../OR_DFM/OR_DE.vhd" sub00/vhpl03 1488032101

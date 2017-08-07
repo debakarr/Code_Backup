@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : OR_S.tfw
+// /___/   /\     Timestamp : Sat Feb 18 08:56:01 2017
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: OR_S
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module OR_S;
+    reg A = 1'b0;
+    reg B = 1'b0;
+    wire C;
+
+
+    OR_DE UUT (
+        .A(A),
+        .B(B),
+        .C(C));
+
+    initial begin
+        // -------------  Current Time:  200ns
+        #200;
+        B = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  300ns
+        #100;
+        A = 1'b1;
+        B = 1'b0;
+        // -------------------------------------
+        // -------------  Current Time:  400ns
+        #100;
+        B = 1'b1;
+    end
+
+endmodule
+

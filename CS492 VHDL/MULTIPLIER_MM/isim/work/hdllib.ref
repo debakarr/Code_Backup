@@ -1,0 +1,6 @@
+EN adder_de NULL "C:/Users/BAKA/Documents/Xilinx Baka/MULTIPLIER_MM/../ADDER_DFM/ADDER_DE.vhd" sub00/vhpl00 1488761411
+AR multiplier_de behavioral "C:/Users/BAKA/Documents/Xilinx Baka/MULTIPLIER_MM/MULTIPLIER_DE.vhd" sub00/vhpl03 1488761414
+AR adder_de behavioral "C:/Users/BAKA/Documents/Xilinx Baka/MULTIPLIER_MM/../ADDER_DFM/ADDER_DE.vhd" sub00/vhpl01 1488761412
+AR multiplier_s testbench_arch "C:/Users/BAKA/Documents/Xilinx Baka/MULTIPLIER_MM/MULTIPLIER_S.vhw" sub00/vhpl05 1488761416
+EN multiplier_de NULL "C:/Users/BAKA/Documents/Xilinx Baka/MULTIPLIER_MM/MULTIPLIER_DE.vhd" sub00/vhpl02 1488761413
+EN multiplier_s NULL "C:/Users/BAKA/Documents/Xilinx Baka/MULTIPLIER_MM/MULTIPLIER_S.vhw" sub00/vhpl04 1488761415

@@ -1,0 +1,4 @@
+MO FULL_SUBTRACTOR_S NULL "C:/Users/BAKA/Documents/Xilinx Baka/FULL_SUBTRACTOR_DFM/FULL_SUBTRACTOR_S.tfw" vlg29/_f_u_l_l___s_u_b_t_r_a_c_t_o_r___s.bin 1487393518
+EN full_subtractor_de NULL "C:/Users/BAKA/Documents/Xilinx Baka/FULL_SUBTRACTOR_DFM/FULL_SUBTRACTOR_DE.vhd" sub00/vhpl00 1487393681
+AR full_subtractor_de behavioral "C:/Users/BAKA/Documents/Xilinx Baka/FULL_SUBTRACTOR_DFM/FULL_SUBTRACTOR_DE.vhd" sub00/vhpl01 1487393682
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1487392976

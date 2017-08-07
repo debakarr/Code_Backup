@@ -1,0 +1,4 @@
+AR nand_de behavioral C:/Xilinx92i/NAND_DFM/NAND_DE.vhd sub00/vhpl01 1487388518
+EN nand_de NULL C:/Xilinx92i/NAND_DFM/NAND_DE.vhd sub00/vhpl00 1487388517
+MO NAND_S NULL C:/Xilinx92i/NAND_DFM/NAND_S.tfw vlg3F/_n_a_n_d___s.bin 1487388516
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1487388517
