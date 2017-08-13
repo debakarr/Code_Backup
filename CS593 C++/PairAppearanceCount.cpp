@@ -1,37 +1,40 @@
 #include <cstring>
 #include <iostream>
 #include <string>
-int count_pair_occurences_string(const std::string&, const std::string& pair);
-int count_pair_occurences_chararray(const char*, const char* pair);
 
-int main(){
-    std::cout<<count_pair_occurences_chararray("babuwwhabxyabjahba","ab")<<std::endl;
-    std::cout<<count_pair_occurences_string("babuwwhabxyabjahba","ab");
+using namespace std;
+
+int countPairApperanceString(string, string pair);
+int countPairApperanceCharArray(char*, char* pair);
+
+int main() {
+	char myChar[40] = "axabaacbaxabba", searchChar[3] = "ab";
+	string myString = "ajxkjabkjfdfjkabjsjdkjababaabjad", searchString = "ab";
+
+	cout << "Number of occurrence of 'ab' in 'axabaacbaxabba' : " << countPairApperanceCharArray(myChar, searchChar) << endl;
+
+
+	cout << "Number of occurrence of 'ab' in 'ajxkjabkjfdfjkabjsjdkjababaabjad' : " << countPairApperanceString(myString, searchString);
 }
 
-int count_pair_occurences_string(const std::string& mystring, const std::string& pair){
-    int count=0;
-    size_t position=0;
-    while ( (position=mystring.find(pair,position)) != std::string::npos ){
-        ++count;
-        ++position;
-    }
+int countPairApperanceString(string mystring, string pair) {
+	int count = 0, pos = 0;
+	while ( (pos = mystring.find(pair, pos)) != string::npos ) {
+		++count;
+		++pos;
+	}
 
-return count;
+	return count;
 }
 
-int count_pair_occurences_chararray(const char* chararray, const char* pair){
-    //let's say the pair is ab
-    //first we find the first occurrence of a, if it is followed by b we increment the counter
-    const char* iterator=chararray;
-    int count=0;
+int countPairApperanceCharArray(char* chararray, char* pair) {
+	int count = 0;
 
-    while (*iterator !=0){
-        if ( strncmp(iterator,pair,1) == 0 )
-            if ( strncmp(iterator+1,pair+1,1) == 0 )
-                ++count;
-        ++iterator;
-    }
-
-    return count;
+	while (*chararray != 0) {
+		if ( strncmp(chararray, pair, 1) == 0 )
+			if ( strncmp(chararray + 1, pair + 1, 1) == 0 )
+				++count;
+		++chararray;
+	}
+	return count;
 }
