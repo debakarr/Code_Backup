@@ -15,7 +15,7 @@ void AreaOfCircle::getData() {
 }
 
 void AreaOfCircle::calculateArea() {
-	cout << "\nArea of circle with radius" << r << " = " << PI * r * r;
+	cout << "\nArea of circle with radius " << r << " = " << PI * r * r;
 }
 
 int main() {

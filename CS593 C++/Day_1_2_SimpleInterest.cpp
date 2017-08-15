@@ -14,7 +14,7 @@ void SimpleInterest::getData() {
 }
 
 void SimpleInterest::calculateInterest() {
-	cout << "\nSimple Interest = " << (p * t * r) / 100;
+	cout << "\nSimple Interest of principal amount Rs. " << p << " at rate of " << r << "% for " << t << " years = Rs. " << (p * t * r) / 100;
 }
 
 int main() {
