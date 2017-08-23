@@ -23,3 +23,13 @@ int main() {
 	obj1.calculateInterest();
 	return (0);
 }
+
+/*
+$ g++ Day_1_2_SimpleInterestNormal.cpp
+
+$ a.exe
+
+Enter the principal amount, time and rate of interest: 10000 2 15
+
+Simple Interest of principal amount Rs. 10000 at rate of 15% for 2 years = Rs. 3000
+*/

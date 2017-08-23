@@ -18,3 +18,14 @@ int main() {
 float calculateArea(float r) {
 	return (3.14159 * r * r);
 }
+
+
+/*
+$ g++ Day_1_1_AreaOfCircleNormal.cpp
+
+$ a.exe
+
+Enter the radius: 6
+
+Area of circle with radius 6 = 113.097
+*/

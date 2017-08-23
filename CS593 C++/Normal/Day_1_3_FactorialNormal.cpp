@@ -23,3 +23,12 @@ int calculateFactorial(int n) {
 	}
 	return f;
 }
+
+/*
+$ g++ Day_1_3_FactorialNormal.cpp
+
+$ a.exe
+
+Enter the number: 5
+Factorial = 120
+*/

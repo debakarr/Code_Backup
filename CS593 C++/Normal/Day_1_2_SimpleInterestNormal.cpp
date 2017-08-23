@@ -19,3 +19,13 @@ int main() {
 float calculateInterest(float p, float r, int t) {
 	return ((p * t * r) / 100);
 }
+
+/*
+$ g++ Day_1_2_SimpleInterestNormal.cpp
+
+$ a.exe
+
+Enter the principal amount, time and rate of interest: 10000 2 15
+
+Simple Interest of principal amount Rs. 10000 at rate of 15% for 2 years = Rs. 3000
+*/
