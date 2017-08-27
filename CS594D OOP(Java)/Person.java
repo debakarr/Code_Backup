@@ -28,7 +28,7 @@ class Main {
 		char gender;
 		float salary;
 
-		//
+		//Create an object of class Person
 		Person p = new Person();
 
 		//Open up standard input, and buffer it
@@ -51,7 +51,7 @@ class Main {
 		System.out.print("\nEnter the salary: ");
 		salary = Float.parseFloat(r.readLine());
 
-		//Call instance method of class Person
+		//Call instance method of class Person to input data and then display it respectively
 		p.inputData(name, age, gender, salary);
 		p.displayData();
 	}

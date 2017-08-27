@@ -1,3 +1,5 @@
+import java.util.*;
+
 class ArraySort {
 	int[] sortArrayAsc(int[] arr) {
 		int temp;
@@ -26,23 +28,39 @@ class ArraySort {
 		}
 		return (arr);
 	}
+
+	void inputArray(int[] a, Scanner in) {
+		for (int i = 0; i < a.length; i++)
+			a[i] = in.nextInt();
+	}
+
+	void displayArray(int[] a) {
+		for (int i = 0; i < a.length; i++)
+			System.out.print(a[i] + " ");
+	}
 }
 
 class Main {
 	public static void main(String[] args) {
-		int[] arr1 = {6, 3, 8, 4, 9, 2, 0};
-		int[] arr2 = {6, 3, 8, 4, 9, 2, 0};
+
+		Scanner in = new Scanner(System.in);
 		ArraySort a = new ArraySort();
 
-		arr1 = a.sortArrayAsc(arr1);
-		arr2 = a.sortArrayDes(arr2);
+		System.out.print("\nEnter the number of elements in array: ");
+		int num = in.nextInt();
 
-		for (int i = 0; i < arr1.length; i++)
-			System.out.print(arr1[i] + " ");
-		System.out.println();
+		int A[] = new int[num];
+		System.out.println("\nEnter the array: ");
+		a.inputArray(A, in);
 
-		for (int i = 0; i < arr2.length; i++)
-			System.out.print(arr2[i] + " ");
-		System.out.println();
+		in.close();
+
+		a.sortArrayAsc(A);
+		System.out.println("\nArray after sorting in ascending order: ");
+		a.displayArray(A);
+
+		a.sortArrayDes(A);
+		System.out.println("\nArray after sorting in decending order: ");
+		a.displayArray(A);
 	}
 }

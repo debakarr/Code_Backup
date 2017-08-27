@@ -1,3 +1,5 @@
+import java.util.*;
+
 class MatrixAddSubMul {
 	int[][] addMatrix(int[][] a, int[][] b) {
 		int sum[][] = new int[a.length][a[0].length];
@@ -31,52 +33,88 @@ class MatrixAddSubMul {
 		}
 		return (mul);
 	}
+
+	void displayMatrix(int a[][]) {
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[0].length; j++) {
+				System.out.print(a[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	void inputMatrix(int a[][]) {
+		Scanner in = new Scanner(System.in);
+
+		for (int i = 0; i < a.length; i++)
+			for (int j = 0; j < a[0].length; j++)
+				a[i][j] = in.nextInt();
+	}
 }
 
 class Main {
 	public static void main(String[] args) {
-		int[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-		int[][] b = {{10, 11, 12}, {13, 14, 15}, {16, 17, 18}};
 
+		Scanner in = new Scanner(System.in);
+		int r1, r2, c1, c2, n;
+		char c;
 		MatrixAddSubMul m = new MatrixAddSubMul();
 
-		int[][] sum = m.addMatrix(a, b);
-		int[][] dif = m.subMatrix(a, b);
-		int[][] mul = m.mulMatrix(a, b);
+		System.out.println("\nEnter the row and columns for 1st Matrix: ");
+		r1 = in.nextInt();
+		c1 = in.nextInt();
 
-		System.out.println("\nMatrix A: ");
-		for (int i = 0; i < a.length; i++) {
-			for (int j = 0; j < a[0].length; j++)
-				System.out.print(a[i][j] + " ");
-			System.out.println();
-		}
+		System.out.println("\nEnter the row and columns for 2nd Matrix: ");
+		r2 = in.nextInt();
+		c2 = in.nextInt();
 
-		System.out.println("\nMatrix B: ");
-		for (int i = 0; i < b.length; i++) {
-			for (int j = 0; j < b[0].length; j++)
-				System.out.print(b[i][j] + " ");
-			System.out.println();
-		}
+		int a[][] = new int[r1][c1];
+		int b[][] = new int[r2][c2];
 
-		System.out.println("\nAddition of Matrix A and Matrix B: ");
-		for (int i = 0; i < sum.length; i++) {
-			for (int j = 0; j < sum[0].length; j++)
-				System.out.print(sum[i][j] + " ");
-			System.out.println();
-		}
+		System.out.println("\nEnter matrix A: ");
+		m.inputMatrix(a);
+		System.out.println("\nEnter matrix B: ");
+		m.inputMatrix(b);
 
-		System.out.println("\nSubtract of Matrix A and Matrix B: ");
-		for (int i = 0; i < dif.length; i++) {
-			for (int j = 0; j < dif[0].length; j++)
-				System.out.print(dif[i][j] + " ");
-			System.out.println();
-		}
+		do {
+			System.out.println("\nWhat operation you want to perform in Matrix A and B?");
+			System.out.print("\n1. Addition\n2. Subtraction \n3. Multiplication\nEnter your choice: ");
 
-		System.out.println("\nMultiplication of Matrix A and Matrix B: ");
-		for (int i = 0; i < mul.length; i++) {
-			for (int j = 0; j < mul[0].length; j++)
-				System.out.print(mul[i][j] + " ");
-			System.out.println();
-		}
+			int choice = in.nextInt();
+
+			switch (choice) {
+			case 1:
+				if (r1 == r2 && c1 == c2) {
+					int[][] sum = m.addMatrix(a, b);
+					System.out.println("\nAddition of matrix A and B is: ");
+					m.displayMatrix(sum);
+				} else
+					System.out.println("\nrow and columns needed to be same for matrix addition.");
+				break;
+
+			case 2:
+				if (r1 == r2 && c1 == c2) {
+					int[][] dif = m.subMatrix(a, b);
+					System.out.println("\nSubtraction of matrix A and B is: ");
+					m.displayMatrix(dif);
+				} else
+					System.out.println("\nrow and columns needed to be same for matrix addition.");
+				break;
+
+			case 3:
+				if (r1 == r2 && c1 == c2) {
+					int[][] mul = m.mulMatrix(a, b);
+					System.out.println("\nMultiplication of matrix A and B is: ");
+					m.displayMatrix(mul);
+				} else
+					System.out.println("\nColumn of Matrix A and row of Matrix B should be same.");
+				break;
+
+			default:
+				System.out.println("\nPlease enter a valid option.");
+			}
+			System.out.print("\nWant to check more?(Y/N): ");
+			c = in.next().charAt(0);
+		} while (c == 'Y' || c == 'y');
 	}
 }
