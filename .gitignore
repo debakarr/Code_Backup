@@ -126,3 +126,8 @@ hs_err_pid*
 Test.cpp
 Test.java
 Test.c
+
+#Folders
+/CS591 Design & Analysis of Algorithm/Extra/*
+/CS594D OOP(Java)/Extra/*
+/CS593 C++/Using Class/Extra/*
