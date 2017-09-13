@@ -1,9 +1,23 @@
 #include<stdio.h>
+#include<time.h>
 
 int Fibonacci(int);
 
 int main() {
-	printf("%d\n", Fibonacci(7));
+	double t;
+	clock_t start, stop;
+	int i;
+
+	for (i = 0; i < 45; ++i)
+	{
+		start = clock();
+		Fibonacci(i);
+		stop = clock();
+
+		t = (double)(stop - start) / CLOCKS_PER_SEC;
+
+		printf("%f\n", t);
+	}
 	return (0);
 }
 
