@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class DistMeter;
+//class DistMeter;
 class DistFeet;
 
 class DistMeter {
